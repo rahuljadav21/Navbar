@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+</head>
+<body>
+   
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#"><img src="./imgs/logo.png" alt="" srcset=""></a>
+            </div>
+            <ul class="nav-list hide">
+                <li><a href="#">Nav</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <ul class="user hide">
+                <li><a href="#">Sign Up</a></li>
+                <li><a href="#">Log In</a></li>
+            </ul>
+                
+                    <div class="burger">
+                        <div class="bar "></div>
+                        <div class="bar "></div>
+                        <div class="bar "></div>
+                    </div>
+               
+               
+            
+            
+        </nav>
+    <script>
+        let cros = false;
+        const burger = document.querySelector('.burger');
+        burger.addEventListener("click",changeBurger);
+        function changeBurger(){
+            if(!cros){
+                burger.children[0].classList.add("b1");
+                burger.children[1].classList.add("b2");
+                burger.children[2].classList.add("b3");
+                //document.getElementsByClassName("navbar")[0].style.flexDirection ='column'
+                document.querySelector(".nav-list").classList.remove('hide')
+                document.querySelector(".user").classList.remove('hide')
+    
+                cros = !cros;
+                
+            }else{
+                burger.children[0].classList.remove("b1");
+                burger.children[1].classList.remove("b2");
+                burger.children[2].classList.remove("b3");
+                //document.getElementsByClassName("navbar")[0].style.flexDirection ='row'
+                document.querySelector(".nav-list").classList.add('hide')
+                document.querySelector(".user").classList.add('hide')
+                cros = !cros;
+            }
+        }
+       
+        
+
+    </script>
+    
+</body>
+</html>

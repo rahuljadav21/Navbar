@@ -1,0 +1,119 @@
+body{
+    background: rgb(31, 31, 34);
+}
+.navbar{
+    background: rgb(94, 20, 163);
+    height: auto;
+    display: flex;
+    border-radius: 6vh;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: stretch;
+}
+.nav-list li{
+margin: 0vh 5vh;
+list-style: none;
+}
+
+.user li{
+margin: 0vh 5vh;
+list-style: none;
+}
+.user li a{
+    text-decoration: none;
+    font-size: large;
+    font-family: -webkit-pictograph;
+    text-decoration: none;
+    color: rgb(235 223 206);
+}
+.user{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+
+.nav-list{
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: space-around;
+}
+.nav-list li a{
+    text-decoration: none;
+    font-size: large;
+    font-family: -webkit-pictograph;
+    text-decoration: none;
+    color: rgb(235 223 206);
+}
+.logo img{
+    height: 47px;
+    width: 90px;
+    margin-top: 1vh;
+    margin-left: 3vh;
+}
+.burger{
+    display: none;
+}
+@media only screen and (max-width: 768px) {
+    .hide{
+        display: none;
+    }
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
+    .burger{
+        display: block;
+    }
+    .nav-list{
+        flex-direction: column;
+    }
+  }
+  .burger{
+    position: absolute;
+    top: 3vh;
+    right: 5vw;
+    height: 7vh;
+    width: 9vh;
+  }
+
+  .bar {
+    background: rgb(255, 255, 255);
+    height: 4px;
+    border-radius: 2px;
+    margin: 6px;
+    width: 37px;
+}
+
+.b1 {
+    background: rgb(255, 255, 255);
+    height: 4px;
+    border-radius: 2px;
+    margin: 6px;
+    width: 37px;
+    position: relative;
+    top: 10px;
+    transform: rotate(
+45deg);
+}
+.b2{
+    display: none;
+}
+.b3 {
+    background: rgb(255, 255, 255);
+    height: 4px;
+    border-radius: 2px;
+    margin: 6px;
+    width: 37px;
+    position: relative;
+    transform: rotate(
+-45deg);
+} 
